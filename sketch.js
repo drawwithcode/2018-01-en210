@@ -31,7 +31,8 @@ function draw() {
 						re=Math.floor(Math.random()*255);
  				 		gr=Math.floor(Math.random()*255);
  				 		bl=Math.floor(Math.random()*255);
-					b=b+(mouseX%50)
+						if(mouseY<pmouseY+10){b=b+(mouseX%50)}
+						else if(mouseY<pmouseY-10){b=b-(mouseX%50)}
 					fill(250,255,50,360)}
 				ellipse(c, 455, 90, 90);
 
